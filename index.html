@@ -238,6 +238,195 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/02/jquery中的noConflict机制/" itemprop="url">
+                  jquery中的noConflict机制
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-02T12:46:11+08:00" content="2016-07-02">
+              2016-07-02
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          jQuery命名空间的处理
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/02/jquery中的noConflict机制/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/02/javascript框架设计-种种子模块/" itemprop="url">
+                  javascript框架设计-种种子模块
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-02T11:43:52+08:00" content="2016-07-02">
+              2016-07-02
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/29/基于rem的响应式布局/" itemprop="url">
                   基于rem的响应式布局
                 </a>
@@ -300,17 +489,12 @@
 
       
         
-          
-            <h3 id="rem的布局新见解"><a href="#rem的布局新见解" class="headerlink" title="rem的布局新见解"></a>rem的布局新见解</h3><p> 其实，在写这篇博客之前，我建议大家可以参看这篇文章<a href="http://www.codeceo.com/article/font-size-web-design.html" target="_blank" rel="external">从网易与淘宝的font-size思考前端设计稿与工作流</a>，我在仔细消化这篇文章后做了一个自己的看法和理解，欢迎交流。</p>
-<h4 id="像素单位的选择"><a href="#像素单位的选择" class="headerlink" title="像素单位的选择"></a>像素单位的选择</h4><h5 id="em的没落"><a href="#em的没落" class="headerlink" title="em的没落"></a>em的没落</h5><p> em的计算与继承：em是基于父元素而来计算的，比如div的parent节点font-size为1.2em，如果我们此时再对div做一个font-size的设置为1.2em，如果1em=12px，那么此时的div font-size为14.4px。</p>
-<h5 id="rem的受宠"><a href="#rem的受宠" class="headerlink" title="rem的受宠"></a>rem的受宠</h5><p> 恰恰相反，rem确实移动开发的最佳选择，因为rem的计算是基于html节点来换算px的。默认1rem = 16px。</p>
-<h5 id="网易的移动端设计方法"><a href="#网易的移动端设计方法" class="headerlink" title="网易的移动端设计方法"></a>网易的移动端设计方法</h5><p> 如果仔细查看网易移动端新闻网页的查看，我们会清晰的发现html节点上有个很明显的标志就是style对font-size的设置。那么我们必须明白的就是这个值是怎么计算出来的。首先，我们必须根据设计稿来。当设计师标注好相关的字体、长度和宽度后，我们先要看psd设计图的大小。比如：我们的设计稿宽为1080px的话，那我们选个100px(好计算)，那么我们的视口宽度就是1080/100=10.8rem，也就是说100px就是1.08rem。当我们设计对应的宽高的时候就可以计算出相应的rem值。</p>
-<p><strong>js动态设置</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">win, doc, dw</span>) </span>&#123;</div><div class="line">	<span class="keyword">var</span> docEl = doc.documentElement,</div><div class="line">			dw = dw || <span class="number">640</span>,</div><div class="line">			resizeEvt = <span class="string">'orientationchange'</span> <span class="keyword">in</span> <span class="built_in">window</span> ? <span class="string">'orientationchange'</span> : <span class="string">'resize'</span>,</div><div class="line">			recalc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				<span class="keyword">var</span> docElWidth = docEl.clientWidth;</div><div class="line">				(docElWidth &gt; <span class="number">640</span>) &amp;&amp; (docElWidth = <span class="number">640</span>);</div><div class="line">				<span class="keyword">if</span> (!docElWidth) <span class="keyword">return</span>;</div><div class="line">				docEl.style.fontSize = docElWidth / (<span class="number">640</span> / <span class="number">100</span>) + <span class="string">'px'</span>;  <span class="comment">//基于640px设计稿</span></div><div class="line">			&#125;;</div><div class="line">	<span class="keyword">if</span> (!doc.addEventListener) <span class="keyword">return</span>;</div><div class="line">	win.addEventListener(resizeEvt, recalc, <span class="literal">false</span>);</div><div class="line">   doc.addEventListener(<span class="string">'DOMContentLoaded'</span>, recalc, <span class="literal">false</span>);</div><div class="line">&#125;)(<span class="built_in">window</span>, <span class="built_in">document</span>, <span class="number">640</span>);</div></pre></td></tr></table></figure>
-<p>这样就可以很好的按设计稿的尺寸来设置相应的宽高了，但是不要对字体用rem单位，还是要用相应的媒介查询来设置字体。千万要在html做视口设置:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"initial-scale=1,maximum-scale=1, minimum-scale=1"</span>&gt;</span></div></pre></td></tr></table></figure>
-
-          
+          UI100%还原的移动页面开发
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/06/29/基于rem的响应式布局/">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -710,7 +894,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -727,7 +911,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
